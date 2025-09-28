@@ -21,7 +21,7 @@ connectDB();
 app.use(helmet());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://instagram-analytics-dashboard.vercel.app/' 
+    ? 'https://instagram-analytics-dashboard.vercel.app' 
     : 'http://localhost:5173',
   credentials: true
 }));
